@@ -23,7 +23,7 @@
     </tr>
 </table> -->
 
-<table class="table table-stripped table-hover">
+<!-- <table class="table table-stripped table-hover">
     <thead>
         <tr>
             <th>Title</th>
@@ -47,4 +47,34 @@
             </div>      
         </td>
     </tr>
-</table>
+</table> -->
+
+
+<div class="col-md-4">
+    <table class="table table-stripped table-hover">
+        <thead>
+            <th>Title</th>
+            <th>Release Year</th>
+            <th></th>
+        </thead>
+
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.title}}</td>
+            <td>{{movie.releaseYear}}</td>
+            <td>
+
+                <div class="btn-group">
+                    <button class="btn-btn-default">
+                        <span class="glyphicon glyphicon-zoom-in"></span>
+                    </button>
+                    <button class="btn-btn-default">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                    <button class="btn-btn-default">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -9,11 +9,13 @@ import { AppComponent } from "./app.component";
 import { MovieList } from "./movie-list.component";
 import { MovieNewComponent } from "./movie-new.component";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpClientModule,
+        FormsModule,
         RouterModule.forRoot([
             {
                 path: "list",
